@@ -3,7 +3,7 @@ include 'protected/Application.php';
 
 $config = [
 	'params' => [
-		'isEnableJivoSite' => false,
+		'isEnableJivoSite' => true,
 		'isEnableAnalytics' => false,
 	],
 	'_map' => [

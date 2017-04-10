@@ -1,51 +1,70 @@
+/* 
+Table of contents
+===========================================
+- General Style
+- Utility Classes
+- Button Style
+- Form Elements
+- Page Header
+- Breadcrumb
+- Tab
+- Pagination
+- Modial Window
+- Customize Owl Carousel
+- Wordpress Default Style
+===========================================
+*/
 
-
-
+/*
+------------------------------------
+- General Style
+------------------------------------
+*/
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Light.ttf?v=2017330125723236);
+    src: url('../fonts/Raleway-Light.ttf');
     font-style:normal;
     font-weight:300;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Regular.ttf?v=2017330125723236);
+    src: url('../fonts/Raleway-Regular.ttf');
     font-style:normal;
     font-weight:400;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Medium.ttf?v=2017330125723236);
+    src: url('../fonts/Raleway-Medium.ttf');
     font-style:normal;
     font-weight:500;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-SemiBold.ttf?v=2017330125723236);
+    src: url('../fonts/Raleway-SemiBold.ttf');
     font-style:normal;
     font-weight:600;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Bold.ttf?v=2017330125723236);
+    src: url('../fonts/Raleway-Bold.ttf');
     font-style:normal;
     font-weight:700;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url(../fonts/Raleway-Black.ttf?v=2017330125723236);
+    src: url('../fonts/Raleway-Black.ttf');
     font-style:normal;
     font-weight:900;
 }
 @font-face {
     font-family: 'Gothic';
-    src: url(../fonts/Gothic.ttf?v=2017330125723236);
+    src: url('../fonts/Gothic.ttf');
     font-style:normal;
     font-weight:300;
 }
 @font-face {
     font-family: 'Gothic';
-    src: url(../fonts/Gothic-Bold.ttf?v=2017330125723236);
+    src: url('../fonts/Gothic-Bold.ttf');
     font-style:normal;
     font-weight:700;
 }
@@ -77,7 +96,7 @@ body {
 	letter-spacing: 0px;
 	color: #3d3d3d;
 	line-height: 30px;
-	-webkit-font-smoothing: antialiased; 
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
 img {
@@ -97,7 +116,11 @@ button, input, textarea {
 .text-right {
     text-align: right;
 }
-
+/*
+------------------------------------
+- Utility Classes
+------------------------------------
+*/
 .icon-caption {
     display: block;
     padding-left: 50px;
@@ -150,7 +173,11 @@ button, input, textarea {
     width: 100%;
     height: 50px;
 }
-
+/*
+------------------------------------
+- Button Style
+------------------------------------
+*/
 .btn,
 a.btn {
     color: #3d3d3d;
@@ -187,7 +214,7 @@ a.btn-3d {
     color: #fff;
     border-bottom: 3px solid #0379ae;
 }
-
+/* All Buttons */
 
 .btn-blue-fill-radius,
 a.btn-blue-fill-radius {
@@ -242,7 +269,7 @@ a.btn-blue-line-sqr {
     -o-border-radius: 0px;
     border-radius: 0px;
 }
-
+/* White Button */
 .btn-lite-fill-radius,
 a.btn-lite-fill-radius {
     background: #f9f9f9;
@@ -325,7 +352,11 @@ a.btn-lite-line-round:hover,
 a.btn-lite-line-sqr:hover {
     color: #3d3d3d !important;
 }
-
+/*
+------------------------------------
+- Modal Window
+------------------------------------
+*/
 .modal-backdrop {
     z-index: -1;
 }
@@ -352,7 +383,11 @@ a.close-me {
     cursor: pointer;
     border: 3px solid #fff;
 }
-
+/* 
+---------------------------------
+- Wordpress Default Style
+---------------------------------
+*/
 
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -389,7 +424,7 @@ a img.aligncenter {
     background: #fff;
     border: 1px solid #f0f0f0;
     max-width: 96%;
-    
+    /* Image does not overflow the content area */
     padding: 5px 3px 10px;
     text-align: center;
 }
@@ -416,7 +451,7 @@ a img.aligncenter {
     margin: 0;
     padding: 0 4px 5px;
 }
-
+/* Media Query */
 
 @media screen and (max-width: 740px) {
     body, img, .wp-caption {

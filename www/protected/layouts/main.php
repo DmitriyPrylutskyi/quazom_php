@@ -81,7 +81,11 @@
                                 <ul class="nav navbar-nav">
 									<? foreach($this->getMap() as $node) : ?>
                                         <? if ($node['is_visible'] == true) : ?>
-                                            <li><a href="<?=$this->toUrl($node['url'])?>"><?=$this->t('app', $node['label'])?></a></li>
+                                            <? if ($this->toUrl($node['url']) != $this->getUrls()): ?>
+                                                <li><a href="<?=$this->toUrl($node['url'])?>"><?=$this->t('app', $node['label'])?></a></li>
+                                                <? else: ?>
+                                                    <li class="active"><a href="<?=$this->toUrl($node['url'])?>"><?=$this->t('app', $node['label'])?></a></li>
+                                            <? endif; ?>
                                         <? endif; ?>
 									<? endforeach; ?>
                                     <li><a href="#contact" class="smoothscroll"><?=$this->t('app', 'Контакты')?></a></li>
@@ -266,7 +270,7 @@
 	<? if ($this->params['isEnableJivoSite']) : ?>
     <!-- BEGIN JIVOSITE CODE {literal} -->
     <script type='text/javascript'>
-    (function(){ var widget_id = '2FYpWTJGIQ';var d=document;var w=window;function l(){
+    (function(){ var widget_id = '<?=$this->t('app', 'rn7cXC9EBC')?>';var d=document;var w=window;function l(){
     var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
     <!-- {/literal} END JIVOSITE CODE -->
 	<? endif; ?>
