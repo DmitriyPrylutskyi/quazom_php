@@ -262,12 +262,14 @@
     <script src="/js/modernizr.custom.53451.js"></script>
     <script src="/js/jquery.gallery.js"></script>
     <script src="/js/theme.js"></script>
-    <script src="/js/google_counter.js"></script>
-    <script src="/js/yandex_counter.js"></script>
+    <? if ($this->params['isEnableAnalytics']) : ?>
+        <script src="/js/google_counter.js"></script>
+        <script src="/js/yandex_counter.js"></script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/43504104" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <? endif; ?>
     <!-- endbuild -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3&callback=myMap&key=AIzaSyDOD7Mhnj7rdb8jZQEDOTrdsbpTzqih3BU"></script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/43504104" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<? if ($this->params['isEnableJivoSite']) : ?>
+   	<? if ($this->params['isEnableJivoSite']) : ?>
     <!-- BEGIN JIVOSITE CODE {literal} -->
     <script type='text/javascript'>
     (function(){ var widget_id = '<?=$this->t('app', 'rn7cXC9EBC')?>';var d=document;var w=window;function l(){
