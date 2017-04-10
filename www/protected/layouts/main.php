@@ -81,7 +81,7 @@
                                 <ul class="nav navbar-nav">
 									<? foreach($this->getMap() as $node) : ?>
                                         <? if ($node['is_visible'] == true) : ?>
-                                            <? if ($this->toUrl($node['url']) != $this->getUrls()): ?>
+                                            <? if ($node['url'] != $this->getUrls()): ?>
                                                 <li><a href="<?=$this->toUrl($node['url'])?>"><?=$this->t('app', $node['label'])?></a></li>
                                                 <? else: ?>
                                                     <li class="active"><a href="<?=$this->toUrl($node['url'])?>"><?=$this->t('app', $node['label'])?></a></li>
