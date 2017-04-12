@@ -124,10 +124,12 @@ jQuery(window).load(function() {
     });
 
     // Counter Js
-    $('.digit').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    if ($("p").is(".digit")) {
+        $('.digit').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    };
 
     // Hero Parallax
     function hero_parallax() {
@@ -165,7 +167,9 @@ jQuery(window).load(function() {
     });
 
     // Gallery init
-    $('#dg-container').gallery({autoplay: true});
+    if ($("div").is("#dg-container")) {
+        $('#dg-container').gallery({autoplay: true});
+    };
 
     // Adjusting Video Player Button In the Middle Alignment and close event
     var vph = $('.video-player-area').height();

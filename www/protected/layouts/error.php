@@ -16,15 +16,17 @@
     <!-- Mobile Specific Meta  -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- CSS -->
-    <!-- build:css /css/style_page.css -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/animate.min.css">
-    <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/typography.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <!-- endbuild -->
+    <?php
+        require_once('combine.php');
+        echo '<link rel="stylesheet" type="text/css" href="'.substr($adir,1).'/'.$f_css.'?v='.md5($fl_css).'" />',PHP_EOL;
+    ?>
+    <!--<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">-->
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -145,12 +147,13 @@
     </footer>
     <!-- Footer Area Ends -->
     <!-- Scripts -->
-    <!-- build:js /js/script_page.js -->
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/theme_page.js"></script>
-    <!-- endbuild -->
+    <?
+        echo ' <script type="text/javascript" src="'.substr($adir,1).'/'.$f_js.'?v='.md5($fl_js).'"></script>',PHP_EOL;
+    ?>
+    <!--<script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/theme.js"></script>-->
     <? if ($this->params['isEnableJivoSite']) : ?>
     <!-- BEGIN JIVOSITE CODE {literal} -->
     <script type='text/javascript'>

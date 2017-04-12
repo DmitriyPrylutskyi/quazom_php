@@ -76,6 +76,7 @@ class Application
 		$file = $this->_rootPath . $this->_viewsPath . DIRECTORY_SEPARATOR . $view;
 		$this->log('View file', ['file' => $file]);
 		$params['content'] = $this->renderFile($file, $params);
+        $params['counters'] = $this->renderFile($this->_rootPath . $this->_viewsPath. DIRECTORY_SEPARATOR .'counters.php', $params);
 		$file = $this->_rootPath . $this->_layoutsPath . DIRECTORY_SEPARATOR . $this->_layout;
 		$this->log('Layout file', ['file' => $file]);
 		return $this->renderFile($file, $params);

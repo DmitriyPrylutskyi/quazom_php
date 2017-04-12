@@ -28,17 +28,19 @@
     <!-- Mobile Specific Meta  -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- CSS -->
-    <!-- build:css /css/style.css -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/animate.min.css">
-    <link rel="stylesheet" href="/css/default.css">
-    <link rel="stylesheet" href="/css/typography.css">
-    <link rel="stylesheet" href="/css/galery.css">
-    <link rel="stylesheet" href="/css/accordion.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <!-- endbuild -->
+    <?php
+        require_once('combine.php');
+        echo '<link rel="stylesheet" type="text/css" href="'.substr($adir, 1).'/'.$f_css.'?v='.md5($fl_css).'" />',PHP_EOL;
+    ?>
+<!--    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/galery.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">-->
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -253,21 +255,20 @@
     </footer>
     <!-- Footer Area Ends -->
     <!-- Scripts -->
-    <!-- build:js /js/script.js -->
-    <script src="/js/jquery-2.1.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.counterup.min.js"></script>
-    <script src="/js/jquery.waypoints.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/modernizr.custom.53451.js"></script>
-    <script src="/js/jquery.gallery.js"></script>
-    <script src="/js/theme.js"></script>
+    <?
+        echo ' <script type="text/javascript" src="'.substr($adir,1).'/'.$f_js.'?v='.md5($fl_js).'"></script>',PHP_EOL;
+    ?>
+    <!--<script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/modernizr.custom.53451.js"></script>
+    <script src="./js/jquery.gallery.js"></script>
+    <script src="./js/theme.js"></script>-->
     <? if ($this->params['isEnableAnalytics']) : ?>
-        <script src="/js/google_counter.js"></script>
-        <script src="/js/yandex_counter.js"></script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/43504104" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <?= $counters ?>
     <? endif; ?>
-    <!-- endbuild -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3&callback=myMap&key=AIzaSyDOD7Mhnj7rdb8jZQEDOTrdsbpTzqih3BU"></script>
    	<? if ($this->params['isEnableJivoSite']) : ?>
     <!-- BEGIN JIVOSITE CODE {literal} -->
