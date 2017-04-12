@@ -1,6 +1,7 @@
 <?php
-require_once('jsmin.php');		//load javascript minifier
-require_once('cssmin.php');		//load css minifier
+//require_once('jsmin.php');		//load javascript minifier
+//require_once('cssmin.php');		//load css minifier
+
 $adir = "./min";
 if (!file_exists($adir)) mkdir($adir) && chmod($adir, 0777);
 $f_css = "style.css";
