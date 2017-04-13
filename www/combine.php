@@ -1,7 +1,4 @@
 <?php
-//require_once('jsmin.php');		//load javascript minifier
-//require_once('cssmin.php');		//load css minifier
-
 $adir = "./min";
 if (!file_exists($adir)) mkdir($adir) && chmod($adir, 0777);
 $f_css = "style.css";
@@ -36,7 +33,6 @@ if (!empty($files_css)) {
 	foreach($files_css as $value) {			//объединение файлов
 		$fl_css.= file_get_contents(substr($value, 1, -1)).' '.PHP_EOL;
 	}
-    //$fl_css = CssMin::minify($fl_css);          //минификация css
 }
 
 $fl_js = null;                              //очистка файла
@@ -44,11 +40,7 @@ if (!empty($files_js)) {
 	foreach($files_js as $value) {			//объединение файлов
 		$fl_js.= file_get_contents(substr($value, 1, -1)).';'.PHP_EOL;
 	}
-    //$fl_js = JSMin::minify($fl_js);            //минификация js
 }
-
-/*echo($fl_css);
-echo ($fl_js);*/
 
 /* Удаляем старые файлы*/
 if (file_exists($adir) && $dh = opendir($adir)) 

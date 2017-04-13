@@ -293,6 +293,7 @@
         margin-bottom: 2.5rem;
     }
     .hero-area-content-inner h1 {
+        font-size: 2rem;
         line-height: 1.1;
     }
     .hero-area-content-inner img {
@@ -425,7 +426,7 @@
     }
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 424px) {
     /* 
     ----------------------------------
     - Header Section Style
