@@ -2,7 +2,7 @@
         <div class="top-page"><a href="#top" class="smoothscroll"><span><i class="fa fa-angle-up"></i></span></a></div>
     <!-- At the Top of Page Area Ends -->
     <!-- Hero Area Starts -->
-    <div id="home" class="hero-area home-1">
+    <div class="hero-area home-1">
         <div class="hero-area-content">
             <div class="speaker"><img src="/img/speaker.png" alt="Speaker"></div>
             <div class="headphone"><img src="/img/headphone.png" alt="Headphone"></div>
@@ -130,7 +130,7 @@
     </div>
     <!-- Algoritm Plan Area Ends -->
     <!-- App Download Area -->
-    <div id="download" class="app-download-area">
+    <div class="app-download-area">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1">

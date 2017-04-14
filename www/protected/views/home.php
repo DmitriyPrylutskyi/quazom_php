@@ -2,7 +2,7 @@
         <div class="top-page"><a href="#top" class="smoothscroll"><span><i class="fa fa-angle-up"></i></span></a></div>
     <!-- At the Top of Page Area Ends -->
     <!-- Hero Area Starts -->
-    <div id="home" class="hero-area home-1">
+    <div class="hero-area home-1">
         <div class="hero-area-content">
             <div class="speaker"><img src="/img/speaker.png" alt="Speaker"></div>
             <div class="headphone"><img src="/img/headphone.png" alt="Headphone"></div>
@@ -111,7 +111,7 @@
     <div class="blank-bg-area first"></div>
     <!-- Blank Background Area Ends -->
     <!-- Clients Area -->
-    <div id="sites" class="clients-area">
+    <div class="clients-area">
         <div class="container">
             <h2 class="title text-center wow fadeInUp" data-wow-delay="0.2s"><?=$this->t('app', 'Наши любимые клиенты')?></h2>
             <div id="dg-container" class="dg-container">
@@ -158,7 +158,7 @@
     </div>
     <!-- Clients Area Ends -->
     <!-- Pricing Plan Area Starts -->
-    <div id="pricing" class="pricing-area">
+    <div class="pricing-area">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -359,7 +359,7 @@
     <div class="blank-bg-area third"></div>
     <!-- Blank Background Area Ends -->
     <!-- App Download Area -->
-    <div id="download" class="app-download-area">
+    <div class="app-download-area">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-1">

@@ -139,7 +139,7 @@
 	<?=$content?>
     <!-- Contact Area Starts -->
     <div id="contact" class="contact-area">
-        <div class="hidden-xs hidden-sm contact-left-bg-img"></div>
+        <div class="hidden-xs hidden-sm hidden-md contact-left-bg-img"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -149,7 +149,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-7 col-md-offset-5">
+                <div class="col-xs-12 col-md-12 col-lg-offset-5">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <div class="icon-box-left wow fadeIn" data-wow-delay="0.2s">
@@ -230,7 +230,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="footer-logo wow fadeIn">
-                            <a href="<?=$this->toUrl('')?>/""><img src="/img/logo-white.png" alt="<?=$this->t('app', 'веб студия Quazom')?>"></a>
+                            <a href="<?=$this->toUrl('')?>/"><img src="/img/logo-white.png" alt="<?=$this->t('app', 'веб студия Quazom')?>"></a>
                         </div>
                         <div class="block-content wow fadeIn">
                             <?=$this->t('app', '<p>Создание сайтов &middot; &nbsp;Веб-разработка &middot; &nbsp;Обслуживание сайтов</p>')?>
