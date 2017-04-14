@@ -245,7 +245,7 @@
                             </div>
                         <div class="inline-content wow fadeIn">
                             <p><span>&copy; 2016-2017</span></p>
-                            <p><span><a href="<?=$this->toUrl('')?>/""><?=$this->t('app', 'Веб-студия Quazom')?></a></span></p>
+                            <p><span><a href="<?=$this->toUrl('')?>/"><?=$this->t('app', 'Веб-студия Quazom')?></a></span></p>
                             <p><span><?=$this->t('app', 'Карта сайта')?></span></p>
                         </div>
                     </div>
